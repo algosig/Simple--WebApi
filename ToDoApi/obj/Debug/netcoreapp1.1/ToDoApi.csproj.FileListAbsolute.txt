@@ -1,0 +1,9 @@
+D:\Sanjog\Docs\Projects\Web\WebAPI\ToDoApi\bin\Debug\netcoreapp1.1\ToDoApi.deps.json
+D:\Sanjog\Docs\Projects\Web\WebAPI\ToDoApi\bin\Debug\netcoreapp1.1\ToDoApi.runtimeconfig.json
+D:\Sanjog\Docs\Projects\Web\WebAPI\ToDoApi\bin\Debug\netcoreapp1.1\ToDoApi.runtimeconfig.dev.json
+D:\Sanjog\Docs\Projects\Web\WebAPI\ToDoApi\bin\Debug\netcoreapp1.1\ToDoApi.dll
+D:\Sanjog\Docs\Projects\Web\WebAPI\ToDoApi\obj\Debug\netcoreapp1.1\ToDoApi.csprojResolveAssemblyReference.cache
+D:\Sanjog\Docs\Projects\Web\WebAPI\ToDoApi\obj\Debug\netcoreapp1.1\ToDoApi.AssemblyInfo.cs
+D:\Sanjog\Docs\Projects\Web\WebAPI\ToDoApi\bin\Debug\netcoreapp1.1\ToDoApi.pdb
+D:\Sanjog\Docs\Projects\Web\WebAPI\ToDoApi\obj\Debug\netcoreapp1.1\ToDoApi.dll
+D:\Sanjog\Docs\Projects\Web\WebAPI\ToDoApi\obj\Debug\netcoreapp1.1\ToDoApi.pdb
