@@ -4,9 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using ToDoApi.Models;
+using catalogbuilder.Models;
 
-namespace ToDoApi
+namespace catalogbuilder
 {
     public class Startup
     {
@@ -25,8 +25,13 @@ namespace ToDoApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            // Add framework services.
             services.AddDbContext<TodoContext>(opt => opt.UseInMemoryDatabase());
+            //services.AddCors( options =>
+            //{
+
+            //});
+
+            // Add framework services.
             services.AddMvc();
         }
 
@@ -35,6 +40,12 @@ namespace ToDoApi
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+
+            app.UseCors(options => {
+                options.AllowAnyOrigin()
+                .AllowAnyHeader()
+                .AllowAnyMethod();
+            });
 
             app.UseMvc();
         }

@@ -1,9 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Mvc;
+using catalogbuilder.Models;
 using System.Linq;
-using ToDoApi.Models;
 
-namespace TodoApi.Controllers
+namespace catalogbuilder.Controllers
 {
     [Route("api/[controller]")]
     public class TodoController : Controller
@@ -16,10 +16,11 @@ namespace TodoApi.Controllers
 
             if (_context.TodoItems.Count() == 0)
             {
-                _context.TodoItems.Add(new TodoItem { Name = "Item1" });
+                _context.TodoItems.Add(new TodoItem { Name = "Sanjog", Body = "Test WebApi" });
                 _context.SaveChanges();
             }
         }
+
         [HttpGet]
         public IEnumerable<TodoItem> GetAll()
         {
@@ -40,7 +41,7 @@ namespace TodoApi.Controllers
         [HttpPost]
         public IActionResult Create([FromBody] TodoItem item)
         {
-            if ( item == null)
+            if (item == null)
             {
                 return BadRequest();
             }
@@ -65,7 +66,7 @@ namespace TodoApi.Controllers
                 return NotFound();
             }
 
-            todo.IsComplete = item.IsComplete;
+            todo.Body = item.Body;
             todo.Name = item.Name;
 
             _context.TodoItems.Update(todo);
@@ -86,6 +87,5 @@ namespace TodoApi.Controllers
             _context.SaveChanges();
             return new NoContentResult();
         }
-
     }
 }
