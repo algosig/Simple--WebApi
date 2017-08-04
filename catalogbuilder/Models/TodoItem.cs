@@ -1,4 +1,4 @@
-﻿namespace catalogbuilder.Models
+﻿namespace todoapi.Models
 {
     public class TodoItem
     {

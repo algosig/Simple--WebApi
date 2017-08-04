@@ -4,9 +4,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using catalogbuilder.Models;
+using todoapi.Models;
 
-namespace catalogbuilder
+namespace todoapi
 {
     public class Startup
     {

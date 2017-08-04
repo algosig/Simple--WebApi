@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using catalogbuilder.Models;
+using todoapi.Models;
 using System.Linq;
 
-namespace catalogbuilder.Controllers
+namespace todoapi.Controllers
 {
     [Route("api/[controller]")]
     public class TodoController : Controller
